@@ -10,8 +10,6 @@ checks), and answers questions with web research. It runs on the owner's own com
 talks to language models through the owner's Claude and Codex command-line subscriptions,
 and is used through a local web interface written in Turkish.
 
-![The chat page of an early version of the web interface](docs/ekran/persona.png)
-
 ## Status and limitations
 
 - **A personal project.** Igris is built for one owner on one machine. It works and is used
