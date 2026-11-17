@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; media-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <title>Çalışma · Igris</title>
+  <base href="./">
+  <script>if (/^\/calis\/?$/.test(location.pathname)) document.querySelector('base').href = '/static/';</script>
+  <link rel="stylesheet" href="study.css">
+  <link rel="stylesheet" href="vendor/mathlive/mathlive-fonts.css">
+  <script type="module" src="study.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Igris ana sayfa">IGRIS <span> / Çalışma</span></a>
+    <span id="connection" role="status">Çalışma alanı hazırlanıyor…</span>
+  </header>
+  <nav class="tabs" aria-label="Çalışma bölümleri" role="tablist">
+    <button id="tab-plan" role="tab" aria-controls="plan-panel" aria-selected="false" tabindex="-1" data-tab="plan">Plan</button>
+    <button id="tab-scene" role="tab" aria-controls="scene-panel" aria-selected="true" data-tab="scene">Sahne</button>
+    <button id="tab-chat" role="tab" aria-controls="chat-panel" aria-selected="false" tabindex="-1" data-tab="chat">Sohbet</button>
+    <button id="tab-solution" role="tab" aria-controls="solution-panel" aria-selected="false" tabindex="-1" data-tab="solution">Çözüm</button>
+  </nav>
+  <main class="workspace" data-active="scene">
+    <section id="plan-panel" class="panel plan-panel" aria-labelledby="plan-title">
+      <div class="panel-heading"><p class="eyebrow">ADIM ADIM</p><h1 id="plan-title">Çalışma planı</h1></div>
+      <div class="panel-body">
+        <h2 id="exam-name">Sınav yükleniyor…</h2><p id="exam-date" class="muted"></p>
+        <ol id="steps" class="steps"></ol>
+        <div class="current-step"><p class="eyebrow">ŞİMDİKİ HEDEF</p><p id="current-goal">Bir adım seç.</p></div>
+        <h3>Konu durumu</h3><ul id="mastery" class="mastery"></ul>
+      </div>
+    </section>
+    <section id="scene-panel" class="panel scene-panel" aria-labelledby="scene-title">
+      <div class="panel-heading"><p class="eyebrow">DOKUN, DEĞİŞTİR, KEŞFET</p><h2 id="scene-title">Vektör sahnesi</h2></div>
+      <div id="scene" class="scene" aria-label="Etkileşimli üç boyutlu vektör sahnesi"></div>
+      <p class="scene-help">Boş alanda sürükle: döndür · Kaydır veya iki parmakla yaklaş: yakınlaştır · Vektör ucunu sürükle: 0,5 adım</p>
+      <p id="selection" class="selection" role="status">Bir nesne seç; sonraki sorunda onu konuşalım.</p>
+      <div id="scene-objects" class="object-buttons" aria-label="Sahnedeki nesneler"></div>
+      <div id="vector-controls" class="vector-controls" aria-label="Vektör ucunu klavyeyle değiştir"></div>
+      <dl id="readouts" class="readouts" aria-live="polite" aria-atomic="true"></dl>
+    </section>
+    <section id="chat-panel" class="panel chat-panel" aria-labelledby="chat-title">
+      <div class="panel-heading"><p class="eyebrow">BİRLİKTE DÜŞÜNELİM</p><h2 id="chat-title">Igris ile çalış</h2></div>
+      <div id="messages" class="messages" role="log" aria-live="polite"><p class="message assistant">Takıldığın yeri yaz. Bir nesne seçersen sorunu onun üzerinden konuşabiliriz.</p></div>
+      <form id="chat-form" class="chat-form">
+        <label for="chat-input">Sorun</label><textarea id="chat-input" rows="3" maxlength="6000" placeholder="İki vektör dik olduğunda ne değişir?" required></textarea>
+        <button id="send-chat" type="submit">Gönder ↗</button>
+      </form>
+    </section>
+    <section id="solution-panel" class="panel solution-panel" aria-labelledby="solution-title">
+      <div class="panel-heading solution-heading"><div><p class="eyebrow">ÖNCE SEN DENE</p><h2 id="solution-title">Çözümün</h2></div><span id="problem-source" class="tag" hidden>Üretilmiş soru</span></div>
+      <div class="solution-body">
+        <p id="problem" class="problem">Soru yükleniyor…</p>
+        <button id="prepare-problem" type="button" hidden>Igris’ten soru hazırlamasını iste ↗</button>
+        <div id="practice-editor" hidden>
+        <div id="palette" class="palette" role="group" aria-label="Matematik sembolleri"></div>
+        <ol id="solution-lines" class="solution-lines" aria-label="Çözüm satırları"></ol>
+        <div class="actions"><button id="add-line" class="quiet" type="button">+ Satır ekle</button><button id="check" type="button" disabled>Kontrol et</button><button id="explain" class="quiet" type="button" hidden>Neden?</button></div>
+        <p id="verdict" class="verdict" role="status"></p><p id="explanation" class="explanation" role="status"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

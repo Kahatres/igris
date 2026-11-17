@@ -1,0 +1,7 @@
+Igris
+Copyright 2026 Velora
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Third-party libraries and fonts bundled under igris/static/ (three.js, MathLive and
+web fonts) keep their own licenses, which are shipped alongside them.

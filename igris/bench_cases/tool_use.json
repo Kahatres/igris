@@ -1,0 +1,114 @@
+[
+ {
+  "id": "tool1",
+  "prompt": "Available tools:\n- get_weather(city: string)\n- calculator(expression: string)\n- read_file(path: string)\n- search_text(query: string, path: string)\n- get_time(timezone: string)\n- list_dir(path: string)\n\nReply with ONLY one JSON object of the form {\"name\": <tool>, \"arguments\": {...}} and no other text.\n\nRequest: What is the weather in Ankara?",
+  "check": {
+   "type": "tool",
+   "name": "get_weather",
+   "args": {
+    "city": "Ankara"
+   }
+  }
+ },
+ {
+  "id": "tool2",
+  "prompt": "Available tools:\n- get_weather(city: string)\n- calculator(expression: string)\n- read_file(path: string)\n- search_text(query: string, path: string)\n- get_time(timezone: string)\n- list_dir(path: string)\n\nReply with ONLY one JSON object of the form {\"name\": <tool>, \"arguments\": {...}} and no other text.\n\nRequest: Hesapla: 17 * 23",
+  "check": {
+   "type": "tool",
+   "name": "calculator",
+   "args": {
+    "expression": "17 * 23"
+   }
+  }
+ },
+ {
+  "id": "tool3",
+  "prompt": "Available tools:\n- get_weather(city: string)\n- calculator(expression: string)\n- read_file(path: string)\n- search_text(query: string, path: string)\n- get_time(timezone: string)\n- list_dir(path: string)\n\nReply with ONLY one JSON object of the form {\"name\": <tool>, \"arguments\": {...}} and no other text.\n\nRequest: README.md dosyasını oku.",
+  "check": {
+   "type": "tool",
+   "name": "read_file",
+   "args": {
+    "path": "README.md"
+   }
+  }
+ },
+ {
+  "id": "tool4",
+  "prompt": "Available tools:\n- get_weather(city: string)\n- calculator(expression: string)\n- read_file(path: string)\n- search_text(query: string, path: string)\n- get_time(timezone: string)\n- list_dir(path: string)\n\nReply with ONLY one JSON object of the form {\"name\": <tool>, \"arguments\": {...}} and no other text.\n\nRequest: Find the text 'TODO' in src/main.py",
+  "check": {
+   "type": "tool",
+   "name": "search_text",
+   "args": {
+    "query": "TODO",
+    "path": "src/main.py"
+   }
+  }
+ },
+ {
+  "id": "tool5",
+  "prompt": "Available tools:\n- get_weather(city: string)\n- calculator(expression: string)\n- read_file(path: string)\n- search_text(query: string, path: string)\n- get_time(timezone: string)\n- list_dir(path: string)\n\nReply with ONLY one JSON object of the form {\"name\": <tool>, \"arguments\": {...}} and no other text.\n\nRequest: What time is it in Europe/Istanbul?",
+  "check": {
+   "type": "tool",
+   "name": "get_time",
+   "args": {
+    "timezone": "Europe/Istanbul"
+   }
+  }
+ },
+ {
+  "id": "tool6",
+  "prompt": "Available tools:\n- get_weather(city: string)\n- calculator(expression: string)\n- read_file(path: string)\n- search_text(query: string, path: string)\n- get_time(timezone: string)\n- list_dir(path: string)\n\nReply with ONLY one JSON object of the form {\"name\": <tool>, \"arguments\": {...}} and no other text.\n\nRequest: docs klasöründeki dosyaları listele.",
+  "check": {
+   "type": "tool",
+   "name": "list_dir",
+   "args": {
+    "path": "docs"
+   }
+  }
+ },
+ {
+  "id": "tool7",
+  "prompt": "Available tools:\n- get_weather(city: string)\n- calculator(expression: string)\n- read_file(path: string)\n- search_text(query: string, path: string)\n- get_time(timezone: string)\n- list_dir(path: string)\n\nReply with ONLY one JSON object of the form {\"name\": <tool>, \"arguments\": {...}} and no other text.\n\nRequest: İzmir'de hava nasıl?",
+  "check": {
+   "type": "tool",
+   "name": "get_weather",
+   "args": {
+    "city": "İzmir"
+   }
+  }
+ },
+ {
+  "id": "tool8",
+  "prompt": "Available tools:\n- get_weather(city: string)\n- calculator(expression: string)\n- read_file(path: string)\n- search_text(query: string, path: string)\n- get_time(timezone: string)\n- list_dir(path: string)\n\nReply with ONLY one JSON object of the form {\"name\": <tool>, \"arguments\": {...}} and no other text.\n\nRequest: Compute 1024 / 8",
+  "check": {
+   "type": "tool",
+   "name": "calculator",
+   "args": {
+    "expression": "1024 / 8"
+   }
+  }
+ },
+ {
+  "id": "tool9",
+  "prompt": "Available tools:\n- get_weather(city: string)\n- calculator(expression: string)\n- read_file(path: string)\n- search_text(query: string, path: string)\n- get_time(timezone: string)\n- list_dir(path: string)\n\nReply with ONLY one JSON object of the form {\"name\": <tool>, \"arguments\": {...}} and no other text.\n\nRequest: config.json içinde 'port' kelimesini ara.",
+  "check": {
+   "type": "tool",
+   "name": "search_text",
+   "args": {
+    "query": "port",
+    "path": "config.json"
+   }
+  }
+ },
+ {
+  "id": "tool10",
+  "prompt": "Available tools:\n- get_weather(city: string)\n- calculator(expression: string)\n- read_file(path: string)\n- search_text(query: string, path: string)\n- get_time(timezone: string)\n- list_dir(path: string)\n\nReply with ONLY one JSON object of the form {\"name\": <tool>, \"arguments\": {...}} and no other text.\n\nRequest: Show me tests/test_app.py",
+  "check": {
+   "type": "tool",
+   "name": "read_file",
+   "args": {
+    "path": "tests/test_app.py"
+   }
+  }
+ }
+]

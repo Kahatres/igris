@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "igris"
+version = "0.1.0"
+description = "Self-hosted, single-owner personal assistant for mail, calendar, Telegram and study, with a local web interface"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "Velora" }]
+keywords = ["assistant", "self-hosted", "personal", "gmail", "telegram", "calendar", "llm"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Web Environment",
+    "Intended Audience :: End Users/Desktop",
+    "Natural Language :: English",
+    "Natural Language :: Turkish",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Communications :: Email",
+    "Topic :: Office/Business :: Scheduling",
+]
+
+[project.urls]
+Homepage = "https://github.com/Kahatres/igris"
+Issues = "https://github.com/Kahatres/igris/issues"
+
+[tool.setuptools]
+packages = ["igris"]
+
+[tool.setuptools.package-data]
+igris = ["roadmap.json", "static/**/*", "bench_cases/*.json", "model_priors.json"]

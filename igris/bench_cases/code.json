@@ -1,0 +1,504 @@
+[
+ {
+  "id": "fizzbuzz",
+  "prompt": "Write a Python function `fizzbuzz_list(n)` that returns a list of strings for 1..n: 'Fizz' for multiples of 3, 'Buzz' for 5, 'FizzBuzz' for both, else the number as a string. Reply with only the code in one ```python block.",
+  "check": {
+   "type": "code",
+   "function": "fizzbuzz_list",
+   "tests": [
+    [
+     [
+      5
+     ],
+     [
+      "1",
+      "2",
+      "Fizz",
+      "4",
+      "Buzz"
+     ]
+    ],
+    [
+     [
+      15
+     ],
+     [
+      "1",
+      "2",
+      "Fizz",
+      "4",
+      "Buzz",
+      "Fizz",
+      "7",
+      "8",
+      "Fizz",
+      "Buzz",
+      "11",
+      "Fizz",
+      "13",
+      "14",
+      "FizzBuzz"
+     ]
+    ],
+    [
+     [
+      0
+     ],
+     []
+    ]
+   ]
+  }
+ },
+ {
+  "id": "palindrome",
+  "prompt": "Write a Python function `is_palindrome(s)` that returns True when s reads the same backwards ignoring case and non-alphanumeric characters. Reply with only the code in one ```python block.",
+  "check": {
+   "type": "code",
+   "function": "is_palindrome",
+   "tests": [
+    [
+     [
+      "A man, a plan, a canal: Panama"
+     ],
+     true
+    ],
+    [
+     [
+      "hello"
+     ],
+     false
+    ],
+    [
+     [
+      ""
+     ],
+     true
+    ],
+    [
+     [
+      "No 'x' in Nixon"
+     ],
+     true
+    ]
+   ]
+  }
+ },
+ {
+  "id": "flatten",
+  "prompt": "Write a Python function `flatten(items)` that flattens arbitrarily nested lists of integers into one flat list, preserving order. Reply with only the code in one ```python block.",
+  "check": {
+   "type": "code",
+   "function": "flatten",
+   "tests": [
+    [
+     [
+      [
+       1,
+       [
+        2,
+        [
+         3,
+         4
+        ]
+       ],
+       5
+      ]
+     ],
+     [
+      1,
+      2,
+      3,
+      4,
+      5
+     ]
+    ],
+    [
+     [
+      []
+     ],
+     []
+    ],
+    [
+     [
+      [
+       [
+        []
+       ],
+       1
+      ]
+     ],
+     [
+      1
+     ]
+    ]
+   ]
+  }
+ },
+ {
+  "id": "two_sum",
+  "prompt": "Write a Python function `two_sum(nums, target)` that returns the sorted list [i, j] of the two distinct indices whose values add up to target (exactly one solution exists). Reply with only the code in one ```python block.",
+  "check": {
+   "type": "code",
+   "function": "two_sum",
+   "tests": [
+    [
+     [
+      [
+       2,
+       7,
+       11,
+       15
+      ],
+      9
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      [
+       3,
+       2,
+       4
+      ],
+      6
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    [
+     [
+      [
+       3,
+       3
+      ],
+      6
+     ],
+     [
+      0,
+      1
+     ]
+    ]
+   ]
+  }
+ },
+ {
+  "id": "roman",
+  "prompt": "Write a Python function `roman_to_int(s)` that converts a Roman numeral string (up to 3999) to an integer. Reply with only the code in one ```python block.",
+  "check": {
+   "type": "code",
+   "function": "roman_to_int",
+   "tests": [
+    [
+     [
+      "III"
+     ],
+     3
+    ],
+    [
+     [
+      "IV"
+     ],
+     4
+    ],
+    [
+     [
+      "LVIII"
+     ],
+     58
+    ],
+    [
+     [
+      "MCMXCIV"
+     ],
+     1994
+    ]
+   ]
+  }
+ },
+ {
+  "id": "word_count",
+  "prompt": "Write a Python function `word_count(text)` that returns a dict mapping each lowercase word to how often it occurs; words are separated by whitespace and surrounding punctuation .,!? is stripped. Reply with only the code in one ```python block.",
+  "check": {
+   "type": "code",
+   "function": "word_count",
+   "tests": [
+    [
+     [
+      "The cat. the dog!"
+     ],
+     {
+      "the": 2,
+      "cat": 1,
+      "dog": 1
+     }
+    ],
+    [
+     [
+      ""
+     ],
+     {}
+    ]
+   ]
+  }
+ },
+ {
+  "id": "merge_sorted",
+  "prompt": "Write a Python function `merge_sorted(a, b)` that merges two sorted lists into one sorted list without using sort or sorted. Reply with only the code in one ```python block.",
+  "check": {
+   "type": "code",
+   "function": "merge_sorted",
+   "tests": [
+    [
+     [
+      [
+       1,
+       3,
+       5
+      ],
+      [
+       2,
+       4,
+       6
+      ]
+     ],
+     [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    ],
+    [
+     [
+      [],
+      [
+       1
+      ]
+     ],
+     [
+      1
+     ]
+    ],
+    [
+     [
+      [
+       1,
+       1
+      ],
+      [
+       1
+      ]
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ]
+   ]
+  }
+ },
+ {
+  "id": "is_prime",
+  "prompt": "Write a Python function `is_prime(n)` that returns True when the integer n is prime. Reply with only the code in one ```python block.",
+  "check": {
+   "type": "code",
+   "function": "is_prime",
+   "tests": [
+    [
+     [
+      2
+     ],
+     true
+    ],
+    [
+     [
+      1
+     ],
+     false
+    ],
+    [
+     [
+      0
+     ],
+     false
+    ],
+    [
+     [
+      97
+     ],
+     true
+    ],
+    [
+     [
+      100
+     ],
+     false
+    ],
+    [
+     [
+      -7
+     ],
+     false
+    ]
+   ]
+  }
+ },
+ {
+  "id": "gcd",
+  "prompt": "Write a Python function `gcd(a, b)` that returns the greatest common divisor of two non-negative integers without using math.gcd. Reply with only the code in one ```python block.",
+  "check": {
+   "type": "code",
+   "function": "gcd",
+   "tests": [
+    [
+     [
+      12,
+      18
+     ],
+     6
+    ],
+    [
+     [
+      17,
+      5
+     ],
+     1
+    ],
+    [
+     [
+      0,
+      9
+     ],
+     9
+    ],
+    [
+     [
+      100,
+      75
+     ],
+     25
+    ]
+   ]
+  }
+ },
+ {
+  "id": "reverse_words",
+  "prompt": "Write a Python function `reverse_words(s)` that reverses the order of the words in s (words separated by any whitespace) and joins them with single spaces. Reply with only the code in one ```python block.",
+  "check": {
+   "type": "code",
+   "function": "reverse_words",
+   "tests": [
+    [
+     [
+      "the sky is blue"
+     ],
+     "blue is sky the"
+    ],
+    [
+     [
+      "  hello   world  "
+     ],
+     "world hello"
+    ],
+    [
+     [
+      ""
+     ],
+     ""
+    ]
+   ]
+  }
+ },
+ {
+  "id": "kadane",
+  "prompt": "Write a Python function `max_subarray(nums)` that returns the largest sum of any non-empty contiguous subarray. Reply with only the code in one ```python block.",
+  "check": {
+   "type": "code",
+   "function": "max_subarray",
+   "tests": [
+    [
+     [
+      [
+       -2,
+       1,
+       -3,
+       4,
+       -1,
+       2,
+       1,
+       -5,
+       4
+      ]
+     ],
+     6
+    ],
+    [
+     [
+      [
+       1
+      ]
+     ],
+     1
+    ],
+    [
+     [
+      [
+       -3,
+       -1,
+       -2
+      ]
+     ],
+     -1
+    ]
+   ]
+  }
+ },
+ {
+  "id": "valid_parens",
+  "prompt": "Write a Python function `valid_parens(s)` that returns True when the brackets ()[]{} in s are balanced and correctly nested. Reply with only the code in one ```python block.",
+  "check": {
+   "type": "code",
+   "function": "valid_parens",
+   "tests": [
+    [
+     [
+      "()[]{}"
+     ],
+     true
+    ],
+    [
+     [
+      "(]"
+     ],
+     false
+    ],
+    [
+     [
+      "([{}])"
+     ],
+     true
+    ],
+    [
+     [
+      "((("
+     ],
+     false
+    ],
+    [
+     [
+      ""
+     ],
+     true
+    ]
+   ]
+  }
+ }
+]

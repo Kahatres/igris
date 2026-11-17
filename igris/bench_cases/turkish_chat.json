@@ -1,0 +1,150 @@
+[
+ {
+  "id": "tr1",
+  "prompt": "Türkiye'nin başkenti neresidir? Tek cümleyle cevapla.",
+  "check": {
+   "type": "facts",
+   "required": [
+    "ankara"
+   ],
+   "forbidden": [],
+   "min_chars": 3,
+   "max_chars": 200
+  }
+ },
+ {
+  "id": "tr2",
+  "prompt": "Bir haftada kaç gün vardır? Türkçe ve kısa cevapla.",
+  "check": {
+   "type": "facts",
+   "required": [
+    "yedi"
+   ],
+   "forbidden": [],
+   "min_chars": 2,
+   "max_chars": 200
+  }
+ },
+ {
+  "id": "tr3",
+  "prompt": "Bana 'merhaba' demenin üç farklı yolunu Türkçe olarak sırala.",
+  "check": {
+   "type": "facts",
+   "required": [
+    "merhaba",
+    "selam"
+   ],
+   "forbidden": [
+    " hello"
+   ],
+   "min_chars": 15,
+   "max_chars": 600
+  }
+ },
+ {
+  "id": "tr4",
+  "prompt": "İstanbul Boğazı hangi iki denizi birbirine bağlar? Türkçe cevapla.",
+  "check": {
+   "type": "facts",
+   "required": [
+    "karadeniz",
+    "marmara"
+   ],
+   "forbidden": [],
+   "min_chars": 10,
+   "max_chars": 400
+  }
+ },
+ {
+  "id": "tr5",
+  "prompt": "Yarın sabah erken kalkmam gerekiyor ama uyuyamıyorum. İki kısa öneri ver.",
+  "check": {
+   "type": "facts",
+   "required": [
+    "uyku"
+   ],
+   "forbidden": [
+    " the ",
+    " you "
+   ],
+   "min_chars": 40,
+   "max_chars": 900
+  }
+ },
+ {
+  "id": "tr6",
+  "prompt": "'Gözlerinin içi gülüyor' deyimi ne anlama gelir? Kısaca açıkla.",
+  "check": {
+   "type": "facts",
+   "required": [
+    "mutlu",
+    "sevin",
+    "neşe"
+   ],
+   "forbidden": [],
+   "min_chars": 20,
+   "max_chars": 600
+  }
+ },
+ {
+  "id": "tr7",
+  "prompt": "Bir müşteriye gecikmiş kargo için kibarca özür dileyen iki cümlelik bir mesaj yaz.",
+  "check": {
+   "type": "facts",
+   "required": [
+    "özür",
+    "kargo"
+   ],
+   "forbidden": [
+    " sorry "
+   ],
+   "min_chars": 40,
+   "max_chars": 500
+  }
+ },
+ {
+  "id": "tr8",
+  "prompt": "Türkçede 'ğ' harfi kelime başında kullanılır mı? Evet ya da hayır diye başla ve açıkla.",
+  "check": {
+   "type": "facts",
+   "required": [
+    "hayır"
+   ],
+   "forbidden": [],
+   "min_chars": 10,
+   "max_chars": 500
+  }
+ },
+ {
+  "id": "tr9",
+  "prompt": "Ankara ile İzmir arasındaki ulaşım için üç seçenek say. Türkçe yaz.",
+  "check": {
+   "type": "facts",
+   "required": [
+    "uçak",
+    "otobüs"
+   ],
+   "forbidden": [
+    " the "
+   ],
+   "min_chars": 20,
+   "max_chars": 700
+  }
+ },
+ {
+  "id": "tr10",
+  "prompt": "Kısa bir dilekçe başlığı örneği yaz: belediyeye çöp toplama saatleri hakkında.",
+  "check": {
+   "type": "facts",
+   "required": [
+    "belediye",
+    "çöp"
+   ],
+   "forbidden": [
+    " the "
+   ],
+   "min_chars": 10,
+   "max_chars": 600
+  }
+ }
+]

@@ -1,0 +1,122 @@
+[
+ {
+  "id": "rs1",
+  "prompt": "Bir çiftlikte tavuklar ve inekler var. Toplam 30 baş ve 74 bacak var. Kaç tavuk var? Sadece sayıyı yaz.",
+  "check": {
+   "type": "exact",
+   "answers": [
+    "23"
+   ]
+  }
+ },
+ {
+  "id": "rs2",
+  "prompt": "Bir tren 90 km/s hızla 2,5 saat gider. Kaç km yol alır? Sadece sayıyı yaz.",
+  "check": {
+   "type": "exact",
+   "answers": [
+    "225"
+   ]
+  }
+ },
+ {
+  "id": "rs3",
+  "prompt": "5 makine 5 dakikada 5 parça üretiyorsa 100 makine 100 parçayı kaç dakikada üretir? Sadece sayıyı yaz.",
+  "check": {
+   "type": "exact",
+   "answers": [
+    "5"
+   ]
+  }
+ },
+ {
+  "id": "rs4",
+  "prompt": "Bir sayının yarısının 3 fazlası 11 ise sayı kaçtır? Sadece sayıyı yaz.",
+  "check": {
+   "type": "exact",
+   "answers": [
+    "16"
+   ]
+  }
+ },
+ {
+  "id": "rs5",
+  "prompt": "Ali Veli'den 4 yaş büyük. İkisinin yaşları toplamı 36. Ali kaç yaşındadır? Sadece sayıyı yaz.",
+  "check": {
+   "type": "exact",
+   "answers": [
+    "20"
+   ]
+  }
+ },
+ {
+  "id": "rs6",
+  "prompt": "2, 6, 12, 20, 30 dizisinde sıradaki sayı kaçtır? Sadece sayıyı yaz.",
+  "check": {
+   "type": "exact",
+   "answers": [
+    "42"
+   ]
+  }
+ },
+ {
+  "id": "rs7",
+  "prompt": "Bir mağaza 200 TL'lik ürüne önce %20 indirim, sonra indirimli fiyata %10 indirim uyguluyor. Son fiyat kaç TL? Sadece sayıyı yaz.",
+  "check": {
+   "type": "exact",
+   "answers": [
+    "144"
+   ]
+  }
+ },
+ {
+  "id": "rs8",
+  "prompt": "Bir havuz A musluğuyla 6 saatte, B musluğuyla 3 saatte doluyor. İkisi birlikte kaç saatte doldurur? Sadece sayıyı yaz.",
+  "check": {
+   "type": "exact",
+   "answers": [
+    "2"
+   ]
+  }
+ },
+ {
+  "id": "rs9",
+  "prompt": "Tüm kediler hayvandır. Bazı hayvanlar uçar. Bu bilgilerden 'bazı kediler uçar' sonucu kesin olarak çıkar mı? Sadece 'evet' ya da 'hayır' yaz.",
+  "check": {
+   "type": "exact",
+   "answers": [
+    "hayır"
+   ]
+  }
+ },
+ {
+  "id": "rs10",
+  "prompt": "Bir saat 3:15'i gösterirken akrep ile yelkovan arasındaki açı kaç derecedir? Sadece sayıyı yaz.",
+  "check": {
+   "type": "exact",
+   "answers": [
+    "7.5"
+   ]
+  }
+ },
+ {
+  "id": "rs11",
+  "prompt": "1'den 100'e kadar olan sayıların toplamı kaçtır? Sadece sayıyı yaz.",
+  "check": {
+   "type": "exact",
+   "answers": [
+    "5050"
+   ]
+  }
+ },
+ {
+  "id": "rs12",
+  "prompt": "Bir dikdörtgenin çevresi 28, bir kenarı 8 ise alanı kaçtır? Sadece sayıyı yaz.",
+  "check": {
+   "type": "exact",
+   "answers": [
+    "48"
+   ]
+  }
+ }
+]

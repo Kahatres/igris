@@ -1,0 +1,292 @@
+{
+  "updated": "2026-11-14",
+  "releases": [
+    {
+      "id": "gpt-arayuz-testi",
+      "title": "Arayüzün GPT (Codex) ile testi",
+      "status": "done",
+      "items": [
+        "Kapatıldı: eski arayüzü kullanan tarayıcı test betikleri silindi; bu plan kapsamında yeni test yapılmayacak."
+      ],
+      "date": "2026-11-14"
+    },
+    {
+      "id": "kisisel-os-gmail-okuma",
+      "title": "Kişisel işletim sistemi: Gmail bağlantısı ve gelen kutusu takibi",
+      "date": "2026-11-07",
+      "status": "done",
+      "items": [
+        "Gmail'e yalnızca okuma izniyle bağlanılır; giriş anahtarı işletim sisteminin anahtar deposunda durur",
+        "Gerçek maillerde başlık sırası doğrulandı: güvenlik kontrolü Google'ın kendi sonucunu okuyor",
+        "Gelen kutusu 5 dakikada bir okunur; riskli mail hemen, önemli mailler akşam tek özetle telefona gelir",
+        "Yönetici, sohbet sayfasındaki Gelen kutusu kartında son mailleri ve güvenlik sonucunu görür; mail içeriği saklanmaz",
+        "Gmail girişi düşerse tek bir uyarı gönderilir ve yeniden giriş yapılana kadar okuma durur"
+      ]
+    },
+    {
+      "id": "kisisel-os-faz-2-cevrimdisi",
+      "title": "Kişisel işletim sistemi, Faz 2: mail güvenliği ve takip altyapısı",
+      "date": "2026-11-06",
+      "status": "done",
+      "items": [
+        "Mail güvenlik kontrolleri: SPF, DKIM, DMARC sonucu, sahte alan adı, sahte görünen ad ve link uyuşmazlığı",
+        "Model çağırmadan kurallarla mail sınıflandırma; Türkçe ekleri tanır",
+        "Yanıt gelmeyen mailler için yeniden başlatmaya dayanıklı takip zamanlayıcıları",
+        "Gmail bağlantısı henüz yok; bu parçalar gerçek mail okumuyor"
+      ]
+    },
+    {
+      "id": "kisisel-os-faz-1",
+      "title": "Kişisel işletim sistemi, Faz 1: taşınabilir çekirdek",
+      "date": "2026-11-05",
+      "status": "done",
+      "items": [
+        "Görevler kullanıcı yanıtını veya bir olayı bekleyebilir; bekleme yeniden başlatmadan etkilenmez",
+        "Onay kapısı: yalnızca insan onaylar, onay tek kullanımlıktır ve işlemin içeriğine bağlıdır",
+        "Telegram ve ntfy bildirimleri; Evet/Hayır yanıtı yalnızca sahibin özel sohbetinden kabul edilir",
+        "Cihaz ajanı etkinlik türünü ve boşta süresini bildirir; pencere başlığı cihazdan çıkmaz",
+        "Tailscale, Telegram botu ve barındırma kararı sahibin adımını bekliyor"
+      ]
+    },
+    {
+      "id": "ajan-pencereleri-ve-hazirlik",
+      "title": "Ajan başına pencereler ve kullanıma hazır multiagent",
+      "date": "2026-10-31",
+      "status": "done",
+      "items": [
+        "Yönetici Claude, Astra ve takım liderleri de kendi pencerelerini aldı; işçilerle birlikte hiyerarşi sırasıyla dizilir",
+        "Her pencerede ajan kimliği (ör. codex:gpt-6-astra), S-E genel rankı, alan rankları ve uzmanlığı",
+        "Yönetici şu anki aşamayı ve ekip ilerlemesini, lider takım üyelerini, Astra son denetim notunu gösterir",
+        "Igris yanındaki multiagent klasörünü kendisi bulur ve işleri multiagent'ın kendi .venv Python'uyla başlatır",
+        "Hazırlık kontrolü: Multiagent sekmesinde eksikler listesi ve python -m igris --multiagent-check"
+      ]
+    },
+    {
+      "id": "dosyalar-ve-gorevler",
+      "title": "Kişisel dosyalar ve arka plan görevleri",
+      "date": "2026-10-29",
+      "status": "done",
+      "items": [
+        "Admin ve misafir hesabı için ayrı dosya yükleme, listeleme, indirme ve silme",
+        "Dosya başına 2 MiB, hesap başına 20 MiB ve 100 dosya sınırı; son işlemleri izleme",
+        "Yüklenen metin ve kod dosyalarını sohbet içinde okuma",
+        "Kullanıcıya özel görev kuyruğu, sonuçlar, iptal ve yeniden başlatma sonrası kurtarma",
+        "İnternete açma adımı kullanıcı isteğiyle ertelendi"
+      ]
+    },
+    {
+      "id": "arayuz-multiagent-yonetimi",
+      "title": "Yeni arayüz ve Multiagent yönetimi",
+      "date": "2026-10-26",
+      "status": "done",
+      "built_by": "Claude (Igris deposu üzerinde doğrudan)",
+      "items": [
+        "Baştan yazılan iki dilli (Türkçe / İngilizce) arayüz: koyu / açık görünüm, hareket kapatma düğmesi",
+        "Multiagent sekmesinde yüzen ajan pencereleri: renk kayıt defteri, değişen dosyalar, çalışma ağacı bilgisi",
+        "Büyük görevler sohbetten otomatik olarak multiagent'a yönlendirilir; sohbette devir kartı ve iş bağlantısı çıkar",
+        "Multiagent iş yöneticisi: kuyruk, IGRIS_MA_PARALLEL kadar paralel koşu, iptal (süreç ağacı), yeniden başlatmada yeniden bağlanma",
+        "Yeni uç noktalar: /jobs, /cancel ve /static/<ad> (/api/multiagent/live ve canlı izleme görünümü sonradan kaldırıldı)"
+      ]
+    },
+    {
+      "id": "g1-model-katmani",
+      "title": "G1: API + abonelik model katmanı",
+      "date": "2026-10-21",
+      "status": "done",
+      "built_by": "multiagent (Claude)",
+      "items": [
+        "OpenAI API backend'i: anahtar Windows Kimlik Bilgisi Yöneticisi'nden, günlük bütçe, gpt-4o-mini'ye otomatik düşüş",
+        "Gemini ve Ollama backend'leri",
+        "Hızlı işler API, uzun işler abonelik (slow_router)",
+        "OpenJarvis ayar dosyasına bağımlılık kalktı"
+      ]
+    },
+    {
+      "id": "birlesik-arayuz",
+      "title": "Birleşik arayüz: Sohbet, Multiagent, Yenilikler",
+      "date": "2026-10-21",
+      "status": "done",
+      "built_by": "multiagent (Claude)",
+      "items": [
+        "Sekmeli yeni arayüz (varsayılan adres http://127.0.0.1:8770)",
+        "Multiagent sekmesi: koşular, kuyruk, nöbetçi durumu, Claude / GPT dağılımı",
+        "Her işçi için sürüklenebilir canlı pencere: model, görev, süre, durum, kod çıktısı",
+        "Canlı bir multiagent koşusu sırasında 10 tarayıcı testi geçti"
+      ]
+    },
+    {
+      "id": "web-arayuz",
+      "title": "Web arayüzü ve Yenilikler paneli",
+      "date": "2026-10-21",
+      "status": "done",
+      "built_by": "multiagent (Claude)",
+      "items": [
+        "python -m igris --web: tarayıcıdan sohbet, oturum ve persona seçimi",
+        "Yenilikler ve Planlar paneli (bu panel)",
+        "Markdown yanıtlar, karanlık mod, mobil görünüm",
+        "Gerçek Claude ile 18 tarayıcı testi geçti"
+      ]
+    },
+    {
+      "id": "faz-5",
+      "title": "Bellek özeti, persona kaydetme, araç izinleri",
+      "date": "2026-10-21",
+      "status": "done",
+      "built_by": "multiagent (Claude + GPT)",
+      "items": [
+        "Uzun sohbetler model yazdığı tek bir özet kaydına sıkıştırılıyordu (summarizer.py); bu modül sonradan kaldırıldı",
+        "Personalar dosyaya kaydedilir ve silinir; yerleşik personalar korunur",
+        "Backend başına araç izni: ör. claude=*; codex=calculate,now"
+      ]
+    },
+    {
+      "id": "faz-4",
+      "title": "Oturum, persona ve dosya araçları asistanda",
+      "date": "2026-10-20",
+      "status": "done",
+      "built_by": "multiagent (Claude)",
+      "items": [
+        "CLI komutları: /session, /sessions, /persona, /personas",
+        "IGRIS_WORKSPACE ile dosya araçları açılır",
+        "Aktif persona sistem istemine eklenir"
+      ]
+    },
+    {
+      "id": "faz-3",
+      "title": "Oturumlar, dosya araçları, personalar",
+      "date": "2026-10-20",
+      "status": "done",
+      "built_by": "multiagent (Claude)",
+      "items": [
+        "Adlı sohbet oturumları (.igris/sessions)",
+        "Çalışma klasörüyle sınırlı salt okunur read_file, list_dir, search_text",
+        "Yerleşik personalar: default, coder, turkish"
+      ]
+    },
+    {
+      "id": "faz-2",
+      "title": "Asistan döngüsü ve komut satırı",
+      "date": "2026-10-20",
+      "status": "done",
+      "built_by": "multiagent (Claude)",
+      "items": [
+        "Araç çağıran konuşma döngüsü",
+        "Etkileşimli REPL ve --once modu"
+      ]
+    },
+    {
+      "id": "faz-1",
+      "title": "Çekirdek modüller",
+      "date": "2026-10-20",
+      "status": "done",
+      "built_by": "multiagent (Claude)",
+      "items": [
+        "Claude CLI ve Codex CLI backend'leri, dönüşümlü yönlendirici ve yedekleme",
+        "JSONL konuşma belleği",
+        "Güvenli hesap makinesi ve saat araçları"
+      ]
+    },
+    {
+      "id": "faz-0",
+      "title": "Proje iskeleti",
+      "date": "2026-10-20",
+      "status": "done",
+      "built_by": "Claude",
+      "items": [
+        "Paket yapısı, test altyapısı, katkı kuralları"
+      ]
+    }
+  ],
+  "plans": [
+    {
+      "id": "zenith-arayuz",
+      "title": "Yeni arayüz: Zenith (/v2)",
+      "status": "in_progress",
+      "items": [
+        "Neon modül çarkı ve ortada Igris'in gözü; gözün rengi ve üstteki satır Igris'in durumunu söyler (boşta, düşünüyor, iş çalışıyor, onay bekliyor, hata)",
+        "Arka plan el yazısı notlarla dolu; bir kısmı canlı veri (riskli mail, açık görev, onay sayısı)",
+        "Modüle tıklayınca cam panel açılır; Ctrl + Boşluk Oracle sohbetini açar; gözün kendisine tıklayınca bekleyen kararlar gelir",
+        "Eski arayüz kaldırıldı; v2 artık / adresinde açılır",
+        "Eklendi: Forge paneli (durum, ilerleme, kaynak dosyalar), canlı olay akışı (SSE), Google Takvim (yalnızca okuma), telefona gömülü el yazısı fontu (Caveat, OFL)",
+        "Sahip adımı: Google Cloud'da Google Calendar API'yi etkinleştirip python tools/gmail_auth.py login ile takvim iznini vermek; S22'de telefon görünümünü denemek",
+        "Oturum/kişilik seçimi ve parola değişikliği v2'ye taşındı; multiagent iş formu ve canlı ajan pencereleri henüz v2'de yok"
+      ]
+    },
+    {
+      "id": "opencode-ucretsiz",
+      "title": "OpenCode ücretsiz modeller",
+      "status": "in_progress",
+      "items": [
+        "OpenCode arka ucu eklendi; yalnızca izin listesindeki modeller kabul edilir (big-pickle ücretsiz ama -free son ekine sahip değil, bu yüzden son ek denetimi yetmez)",
+        "Ücretsiz erişim geçicidir ve yalnızca OpenCode komut satırı aracı üzerinden çalışır",
+        "Özel kullanıma uygun modeller (istemleri eğitimde kullanmaz): deepseek-v4.1-flash-free, glm-5.3-flash-free, beam-free",
+        "Model başına ölçüm: --bench --provider opencode --model ADI; onay sorusu için --yes",
+        "Sahip adımı: üç özel model için python tools/live_check.py opencode <model>, ardından python -m igris --bench --provider opencode --model <model> --domain reasoning ile küçük deneme, sonra diğer alanlar"
+      ]
+    },
+    {
+      "id": "ucretsiz-modeller",
+      "title": "Ücretsiz modeller ve alan sıralaması",
+      "status": "in_progress",
+      "items": [
+        "İstek alanını kurallarla belirleyen yönlendirme ve Modeller paneli eklendi",
+        "Sağlayıcı kayıtları eklendi: OpenRouter (yalnızca :free), Groq, Cerebras (deneme), Mistral, NVIDIA, Cloudflare, SambaNova, Cohere (deneme); Hugging Face ücretsiz kredi vermediği için çıkarıldı",
+        "Günlük kota sayacı, 402 sonrası o gün için durma ve anahtarı hata mesajlarına sızdırmama eklendi",
+        "Gizlilik kapısının tüm istek türlerine bağlanması ve ölçüm veritabanı bekliyor",
+        "Anahtarları edinmek ve ölçümü çalıştırmak için sahip adımı gerekiyor",
+        "Misafir hesabı için yerel Ollama varsayılanı korunuyor"
+      ]
+    },
+    {
+      "id": "hesaplar-internet",
+      "title": "Admin ve misafir hesapları, internet erişimi",
+      "status": "in_progress",
+      "items": [
+        "Hesap kurulumu, giriş/çıkış, parola değiştirme ve kullanıcıya özel sohbet alanları eklendi",
+        "HTTPS erişim adresi ve güvenli oturum çerezi desteği eklendi",
+        "Giriş kilidi, oturum süresi, CSRF, çıkış/parola değişikliği ve yalnızca sahibe açık uç noktalar testlerle doğrulandı",
+        "Zayıf parola kurulumda ilk istemde reddediliyor; yayına alma kontrol listesi docs/self_hosting.md içinde",
+        "Kalan adım: sahibin parolaları kurması ve sunucuyu internete açması (ters vekil, HTTPS, IGRIS_PUBLIC_ORIGIN)",
+        "Dosya yükleme ve kullanıcıya ait metin görevleri eklendi; ayrı kod çalıştırma ortamları sonraki aşamada"
+      ]
+    },
+    {
+      "id": "ma-kod-degistir",
+      "title": "Arayüzden kod değiştiren multiagent işi",
+      "status": "planned",
+      "items": [
+        "İş uç noktasına --context ve --test geçirmek; şimdilik arayüzden başlatılan işler rapor modunda",
+        "Ajan renginin ilk çağrıdan önce de bilinmesi (multiagent yalnızca çağrı sonunda backend bildiriyor)"
+      ]
+    },
+    {
+      "id": "canli-akis",
+      "title": "İşçi penceresinde gerçek zamanlı akış",
+      "status": "idea",
+      "items": [
+        "Model yanıtını çağrı sürerken satır satır göstermek (multiagent çağrı katmanında stream-json)"
+      ]
+    },
+    {
+      "id": "faz-6",
+      "title": "Faz 5 özelliklerini bağlama",
+      "status": "planned",
+      "items": [
+        "Geçmiş dolunca otomatik özet",
+        "Araç izinlerini çağrıdan önce denetleyen bir katman (eski politika modülü kaldırıldı; yeniden tasarlanacak)",
+        "/persona new ve /persona delete komutları"
+      ]
+    },
+    {
+      "id": "fikirler",
+      "title": "Fikirler",
+      "status": "idea",
+      "items": [
+        "Ses döngüsü (G2): kullanıcı tarafından rafa alındı",
+        "Sesli komut",
+        "Eklenti sistemi",
+        "Arayüzde akan (streaming) yanıtlar"
+      ]
+    }
+  ]
+}

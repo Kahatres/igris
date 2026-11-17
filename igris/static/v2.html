@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr" data-motion="on" data-view="odak">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#000000">
+<title>Igris</title>
+<link rel="stylesheet" href="/static/v2.css">
+<link rel="manifest" href="/static/manifest.webmanifest">
+<link rel="icon" type="image/png" href="/static/icon-192.png">
+<link rel="apple-touch-icon" href="/static/icon-192.png">
+</head>
+<body>
+<canvas id="scene" aria-hidden="true"></canvas>
+<div id="scribbles" class="scribbles" aria-hidden="true"></div>
+
+<header class="top">
+  <p id="state-line" class="state-line" role="status" aria-live="polite">
+    <span id="state-dot" class="state-dot" aria-hidden="true"></span>
+    <span id="state-text">bağlanıyor</span>
+  </p>
+  <nav class="top-actions" aria-label="Görünüm">
+    <span id="clock" class="clock"></span>
+    <span class="views" role="group" aria-label="Görünüm seçimi">
+      <button type="button" id="view-odak" class="chip" data-view="odak" aria-pressed="true" title="Odak: modül çarkı">Odak</button>
+      <button type="button" id="view-klasik" class="chip" data-view="klasik" aria-pressed="false" title="Klasik: sekmeli liste">Klasik</button>
+    </span>
+    <button type="button" id="motion-toggle" class="chip">Hareket: açık</button>
+  </nav>
+</header>
+
+<main class="stage">
+  <svg id="wheel" class="wheel" viewBox="-500 -500 1000 1000" role="group" aria-label="Igris modülleri"></svg>
+</main>
+
+<nav id="klasik-tabs" class="klasik-tabs" role="tablist" aria-label="Modüller" hidden></nav>
+
+<div id="tip" class="tip" role="tooltip" hidden></div>
+
+<section id="panel" class="panel" role="dialog" aria-modal="false" aria-labelledby="panel-title" hidden>
+  <header class="panel-head">
+    <h2 id="panel-title">Modül</h2>
+    <p id="panel-sub" class="panel-sub"></p>
+    <button type="button" id="panel-close" class="icon-btn" aria-label="Paneli kapat">×</button>
+  </header>
+  <div id="panel-body" class="panel-body"></div>
+</section>
+
+<section id="oracle" class="oracle" role="dialog" aria-modal="false" aria-labelledby="oracle-title" hidden>
+  <header class="panel-head">
+    <h2 id="oracle-title">Oracle</h2>
+    <p id="oracle-sub" class="panel-sub">Igris ile konuş · Esc kapatır</p>
+    <button type="button" id="oracle-close" class="icon-btn" aria-label="Oracle'ı kapat">×</button>
+  </header>
+  <div id="oracle-log" class="oracle-log" aria-live="polite"></div>
+  <form id="oracle-form" class="oracle-form">
+    <label class="sr" for="oracle-input">Mesajın</label>
+    <textarea id="oracle-input" rows="2" placeholder="Igris'e sor…"></textarea>
+    <button type="submit" id="oracle-send" class="btn">Gönder</button>
+  </form>
+</section>
+
+<button type="button" id="oracle-hint" class="oracle-hint">Ctrl + Boşluk · Oracle'a sor</button>
+
+<noscript><p class="noscript">Bu sayfa JavaScript ister.</p></noscript>
+<script src="/static/v2.js"></script>
+<script src="/static/pwa.js"></script>
+</body>
+</html>

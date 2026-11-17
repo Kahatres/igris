@@ -1,0 +1,57 @@
+{
+  "checked": "2026-10-31",
+  "note": "Current (not archived) Vals AI benchmarks from vals.ai model and leaderboard pages. Each score is divided by the benchmark's best score, so a domain value means 'share of the frontier'. A model Vals did not run on a benchmark has no entry for it. Vendor figures are marked confidence low.",
+  "benchmarks": {
+    "SWE-bench Multimodal": {"domain": "code", "best": 70.21, "source": "https://www.vals.ai/benchmarks/swebench-multimodal"},
+    "Vibe Code Bench v1.1": {"domain": "code", "best": 92.39, "source": "https://www.vals.ai/benchmarks/vibe-code"},
+    "IOI": {"domain": "reasoning", "best": 100.0, "source": "https://www.vals.ai/benchmarks/ioi"},
+    "MysteryMechanism": {"domain": "reasoning", "best": 53.15, "source": "https://www.vals.ai/benchmarks/mysterymechanism"},
+    "Terminal-Bench 4.0": {"domain": "tool_use", "best": 65.15, "source": "https://www.vals.ai/benchmarks/terminal-bench-4"},
+    "SRE Bench": {"domain": "tool_use", "best": 56.87, "source": "https://www.vals.ai/benchmarks/srebench"},
+    "Terminal-Bench-Science": {"domain": "research", "best": 62.86, "source": "https://www.vals.ai/benchmarks/terminal-bench-science"},
+    "BioMysteryBench": {"domain": "research", "best": 81.11, "source": "https://www.vals.ai/benchmarks/biomysterybench"}
+  },
+  "aliases": {
+    "opus": "claude-opus-5.5",
+    "sonnet": "claude-sonnet-5.5",
+    "haiku": "claude-haiku-5.5",
+    "claude-opus-5-5": "claude-opus-5.5",
+    "claude-sonnet-5-5": "claude-sonnet-5.5",
+    "claude-haiku-5-5": "claude-haiku-5.5",
+    "claude-fable-5-1": "claude-fable-5.1"
+  },
+  "models": {
+    "claude-opus-5.5": {"source": "https://vals.ai/models/anthropic_claude-opus-5-5", "scores": {
+      "SWE-bench Multimodal": 70.21, "Vibe Code Bench v1.1": 90.29, "IOI": 95.06, "MysteryMechanism": 49.55,
+      "Terminal-Bench 4.0": 65.15, "SRE Bench": 33.59, "Terminal-Bench-Science": 47.14, "BioMysteryBench": 79.26}},
+    "claude-sonnet-5.5": {"source": "https://vals.ai/models/anthropic_claude-sonnet-5-5", "scores": {
+      "SWE-bench Multimodal": 58.33, "Vibe Code Bench v1.1": 92.39, "IOI": 83.06, "MysteryMechanism": 49.10,
+      "Terminal-Bench 4.0": 64.14, "SRE Bench": 30.15, "Terminal-Bench-Science": 47.14, "BioMysteryBench": 81.11}},
+    "claude-haiku-5.5": {"source": "https://vals.ai/models/anthropic_claude-haiku-5-5", "scores": {
+      "SWE-bench Multimodal": 43.96, "Vibe Code Bench v1.1": 90.44, "IOI": 47.28, "MysteryMechanism": 35.13,
+      "Terminal-Bench 4.0": 36.36, "SRE Bench": 5.72, "Terminal-Bench-Science": 10.00, "BioMysteryBench": 70.37}},
+    "claude-fable-5.1": {"source": "https://vals.ai/models/anthropic_claude-fable-5-1", "scores": {
+      "SWE-bench Multimodal": 61.25, "Vibe Code Bench v1.1": 90.26, "IOI": 90.78, "MysteryMechanism": 47.75,
+      "Terminal-Bench 4.0": 58.08, "SRE Bench": 22.90, "Terminal-Bench-Science": 40.00}},
+    "gpt-6-astra": {"source": "https://vals.ai/models/openai_gpt-6-astra", "scores": {
+      "SWE-bench Multimodal": 43.33, "Vibe Code Bench v1.1": 89.59, "IOI": 100.0, "MysteryMechanism": 53.15,
+      "Terminal-Bench 4.0": 59.60, "SRE Bench": 56.87, "Terminal-Bench-Science": 62.86, "BioMysteryBench": 79.26},
+      "vendor": [{"domain": "research", "benchmark": "BrowseComp (OpenAI)", "score": 91.5,
+                  "source": "https://benchlm.ai/md/models/gpt-6-astra.md"}]},
+    "gpt-6.1-sol": {"source": "https://vals.ai/models/openai_gpt-6.1-sol", "scores": {
+      "SWE-bench Multimodal": 43.54, "Vibe Code Bench v1.1": 88.93, "IOI": 96.89, "MysteryMechanism": 46.40,
+      "Terminal-Bench 4.0": 55.05, "SRE Bench": 50.76, "Terminal-Bench-Science": 52.86, "BioMysteryBench": 79.63}},
+    "gemini-3.8-flash": {"source": "https://vals.ai/models/google_gemini-3.8-flash", "scores": {
+      "SWE-bench Multimodal": 40.83, "Vibe Code Bench v1.1": 78.65, "IOI": 56.94, "MysteryMechanism": 36.49,
+      "Terminal-Bench 4.0": 19.70, "SRE Bench": 11.07, "Terminal-Bench-Science": 8.57, "BioMysteryBench": 62.22}},
+    "glm-5.3-flash": {"source": "https://vals.ai/models/zai_glm-5.3-flash", "scores": {
+      "Vibe Code Bench v1.1": 30.76, "IOI": 52.50,
+      "Terminal-Bench 4.0": 37.37, "SRE Bench": 0.76, "Terminal-Bench-Science": 2.86}},
+    "deepseek-v4.1-flash": {"source": "https://vals.ai/models/deepseek_deepseek-v4.1-flash", "scores": {
+      "SWE-bench Multimodal": 46.46, "Vibe Code Bench v1.1": 84.74, "IOI": 40.28, "MysteryMechanism": 21.17,
+      "Terminal-Bench 4.0": 19.70, "SRE Bench": 0.76, "Terminal-Bench-Science": 0.00, "BioMysteryBench": 67.78}},
+    "mimo-v2.6-flash": {"source": "https://vals.ai/models/xiaomi_mimo-v2.6-flash", "scores": {
+      "Vibe Code Bench v1.1": 78.96, "IOI": 47.67, "MysteryMechanism": 21.62,
+      "Terminal-Bench 4.0": 24.24, "SRE Bench": 4.20, "Terminal-Bench-Science": 4.29, "BioMysteryBench": 69.26}}
+  }
+}

@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.pytest-*/
+.venv/
+*.egg-info/
+
+# Build and frontend output
+node_modules/
+dist/
+build/
+
+# Secrets and local settings (the example file stays tracked)
+.env
+.env.*
+!.env.example
+credentials*.json
+token*.json
+client_secret*.json
+
+# Local data, databases and logs
+.igris/
+*.log
+*.sqlite
+*.sqlite3
+*.db
+/chat.json
+/terms.json
+
+# Agent tooling and private notes (kept out of the public repository)
+.claude/
+.superpowers/
+docs/HANDOFF.md
+docs/archive/
+docs/prompts/
+
+# Stray temporary folders created by tests on Windows
+Users*AppData*/

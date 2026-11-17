@@ -1,0 +1,152 @@
+[
+ {
+  "id": "sum1",
+  "prompt": "Aşağıdaki metni en fazla iki cümleyle özetle. Önemli sayıları ve adları koru.\n\nMetin: Ayşe Hanım 12 Mart'ta İzmir'deki fabrikasını kapatıp üretimi Bursa'ya taşıdı. Karar, enerji maliyetlerinin yüzde 30 artmasından sonra alındı. Yaklaşık 120 çalışan Bursa'ya nakledilecek.",
+  "check": {
+   "type": "facts",
+   "required": [
+    "bursa",
+    "izmir",
+    "120"
+   ],
+   "forbidden": [],
+   "min_chars": 20,
+   "max_chars": 400
+  }
+ },
+ {
+  "id": "sum2",
+  "prompt": "Aşağıdaki metni en fazla iki cümleyle özetle. Önemli sayıları ve adları koru.\n\nMetin: Toplantıda yeni mobil uygulamanın lansmanı 5 Mayıs'a ertelendi çünkü ödeme modülünde güvenlik açığı bulundu. Test ekibi açığı iki hafta içinde kapatacak. Pazarlama bütçesi değişmeyecek.",
+  "check": {
+   "type": "facts",
+   "required": [
+    "5 mayıs",
+    "güvenlik",
+    "iki hafta"
+   ],
+   "forbidden": [],
+   "min_chars": 20,
+   "max_chars": 400
+  }
+ },
+ {
+  "id": "sum3",
+  "prompt": "Aşağıdaki metni en fazla iki cümleyle özetle. Önemli sayıları ve adları koru.\n\nMetin: Belediye, Kadıköy-Moda hattındaki tramvay seferlerini hafta sonları da 02.00'ye kadar uzatacak. Uygulama 1 Haziran'da başlayacak. Bilet fiyatı 25 TL olarak kalacak.",
+  "check": {
+   "type": "facts",
+   "required": [
+    "kadıköy",
+    "02.00",
+    "1 haziran"
+   ],
+   "forbidden": [],
+   "min_chars": 20,
+   "max_chars": 400
+  }
+ },
+ {
+  "id": "sum4",
+  "prompt": "Aşağıdaki metni en fazla iki cümleyle özetle. Önemli sayıları ve adları koru.\n\nMetin: Araştırmacılar, günde 30 dakika yürüyen kişilerde kalp hastalığı riskinin yüzde 20 düştüğünü buldu. Çalışma 5 yıl sürdü ve 8.000 gönüllüyü kapsadı.",
+  "check": {
+   "type": "facts",
+   "required": [
+    "30 dakika",
+    "yüzde 20",
+    "8.000"
+   ],
+   "forbidden": [],
+   "min_chars": 20,
+   "max_chars": 400
+  }
+ },
+ {
+  "id": "sum5",
+  "prompt": "Aşağıdaki metni en fazla iki cümleyle özetle. Önemli sayıları ve adları koru.\n\nMetin: Şirket üçüncü çeyrekte 40 milyon TL gelir elde etti; bu rakam geçen yıla göre yüzde 15 yüksek. Kâr ise yenileme giderleri yüzünden 3 milyon TL'ye geriledi.",
+  "check": {
+   "type": "facts",
+   "required": [
+    "40 milyon",
+    "yüzde 15",
+    "3 milyon"
+   ],
+   "forbidden": [],
+   "min_chars": 20,
+   "max_chars": 400
+  }
+ },
+ {
+  "id": "sum6",
+  "prompt": "Aşağıdaki metni en fazla iki cümleyle özetle. Önemli sayıları ve adları koru.\n\nMetin: Kütüphane 15 Ekim'den itibaren pazar günleri de açık olacak. Çalışma saatleri 10.00-18.00 olacak. Üyelik ücreti artmayacak, ancak gecikme cezası günlük 2 TL'ye çıkacak.",
+  "check": {
+   "type": "facts",
+   "required": [
+    "pazar",
+    "10.00",
+    "2 tl"
+   ],
+   "forbidden": [],
+   "min_chars": 20,
+   "max_chars": 400
+  }
+ },
+ {
+  "id": "sum7",
+  "prompt": "Aşağıdaki metni en fazla iki cümleyle özetle. Önemli sayıları ve adları koru.\n\nMetin: Dr. Kaya'nın ekibi yeni bir antibiyotiğin fare deneylerinde bakterilerin yüzde 90'ını yok ettiğini açıkladı. İnsan deneyleri 2027'de başlayabilir.",
+  "check": {
+   "type": "facts",
+   "required": [
+    "yüzde 90",
+    "2027",
+    "fare"
+   ],
+   "forbidden": [],
+   "min_chars": 20,
+   "max_chars": 400
+  }
+ },
+ {
+  "id": "sum8",
+  "prompt": "Aşağıdaki metni en fazla iki cümleyle özetle. Önemli sayıları ve adları koru.\n\nMetin: Okul servis ücretleri eylülde yüzde 25 artacak. Veliler, artışın yakıt fiyatlarından kaynaklandığı açıklamasını aldı. İtirazlar 10 Ağustos'a kadar yapılabilir.",
+  "check": {
+   "type": "facts",
+   "required": [
+    "yüzde 25",
+    "yakıt",
+    "10 ağustos"
+   ],
+   "forbidden": [],
+   "min_chars": 20,
+   "max_chars": 400
+  }
+ },
+ {
+  "id": "sum9",
+  "prompt": "Aşağıdaki metni en fazla iki cümleyle özetle. Önemli sayıları ve adları koru.\n\nMetin: Ege kıyısında yangın nedeniyle 3 köy tahliye edildi. Yaklaşık 600 itfaiyeci ve 12 uçak müdahale ediyor. Yetkililer yangının rüzgâr nedeniyle genişlediğini söyledi.",
+  "check": {
+   "type": "facts",
+   "required": [
+    "3 köy",
+    "600",
+    "rüzgâr"
+   ],
+   "forbidden": [],
+   "min_chars": 20,
+   "max_chars": 400
+  }
+ },
+ {
+  "id": "sum10",
+  "prompt": "Aşağıdaki metni en fazla iki cümleyle özetle. Önemli sayıları ve adları koru.\n\nMetin: Takımın yeni teknik direktörü Murat Aksoy, iki yıllık sözleşme imzaladı. İlk maçı 14 Eylül'de deplasmanda oynayacak. Yönetim hedefin ilk beşe girmek olduğunu belirtti.",
+  "check": {
+   "type": "facts",
+   "required": [
+    "murat aksoy",
+    "iki yıl",
+    "14 eylül"
+   ],
+   "forbidden": [],
+   "min_chars": 20,
+   "max_chars": 400
+  }
+ }
+]

@@ -1,0 +1,132 @@
+[
+ {
+  "id": "lc1",
+  "prompt": "Yukarıdaki metni dikkatle oku. Soru: Metinde kasanın şifresi nedir? Sadece cevabı yaz.",
+  "haystack": {
+   "words": 1500,
+   "depth": 0.1,
+   "needle": "Kasanın şifresi 4821-KARTAL olarak belirlendi."
+  },
+  "check": {
+   "type": "contains",
+   "answer": "4821-KARTAL"
+  }
+ },
+ {
+  "id": "lc2",
+  "prompt": "Yukarıdaki metni dikkatle oku. Soru: Toplantı odasının adı nedir? Sadece cevabı yaz.",
+  "haystack": {
+   "words": 1500,
+   "depth": 0.5,
+   "needle": "Toplantı odasının adı Lale Salonu'dur."
+  },
+  "check": {
+   "type": "contains",
+   "answer": "Lale Salonu"
+  }
+ },
+ {
+  "id": "lc3",
+  "prompt": "Yukarıdaki metni dikkatle oku. Soru: Proje kod adı nedir? Sadece cevabı yaz.",
+  "haystack": {
+   "words": 1500,
+   "depth": 0.9,
+   "needle": "Proje kod adı MAVİ-TİLKİ-77 olarak kayda geçti."
+  },
+  "check": {
+   "type": "contains",
+   "answer": "MAVİ-TİLKİ-77"
+  }
+ },
+ {
+  "id": "lc4",
+  "prompt": "Yukarıdaki metni dikkatle oku. Soru: Teslimat hangi şehre yapılacak? Sadece cevabı yaz.",
+  "haystack": {
+   "words": 3000,
+   "depth": 0.2,
+   "needle": "Teslimat 18 Kasım'da Trabzon deposuna yapılacak."
+  },
+  "check": {
+   "type": "contains",
+   "answer": "Trabzon"
+  }
+ },
+ {
+  "id": "lc5",
+  "prompt": "Yukarıdaki metni dikkatle oku. Soru: Yedek anahtar nerede? Sadece cevabı yaz.",
+  "haystack": {
+   "words": 3000,
+   "depth": 0.5,
+   "needle": "Yedek anahtar mavi dolabın ikinci çekmecesindedir."
+  },
+  "check": {
+   "type": "contains",
+   "answer": "ikinci çekmece"
+  }
+ },
+ {
+  "id": "lc6",
+  "prompt": "Yukarıdaki metni dikkatle oku. Soru: Dahili numara kaçtır? Sadece cevabı yaz.",
+  "haystack": {
+   "words": 3000,
+   "depth": 0.8,
+   "needle": "Sistem yöneticisinin dahili numarası 5539'dur."
+  },
+  "check": {
+   "type": "contains",
+   "answer": "5539"
+  }
+ },
+ {
+  "id": "lc7",
+  "prompt": "Yukarıdaki metni dikkatle oku. Soru: Yedekleme saati kaçtır? Sadece cevabı yaz.",
+  "haystack": {
+   "words": 6000,
+   "depth": 0.1,
+   "needle": "Sunucunun yedekleme saati 03:45'tir."
+  },
+  "check": {
+   "type": "contains",
+   "answer": "03:45"
+  }
+ },
+ {
+  "id": "lc8",
+  "prompt": "Yukarıdaki metni dikkatle oku. Soru: Müşteri numarası nedir? Sadece cevabı yaz.",
+  "haystack": {
+   "words": 6000,
+   "depth": 0.5,
+   "needle": "Müşteri numarası KR-90210 olarak kaydedildi."
+  },
+  "check": {
+   "type": "contains",
+   "answer": "KR-90210"
+  }
+ },
+ {
+  "id": "lc9",
+  "prompt": "Yukarıdaki metni dikkatle oku. Soru: Sözleşme hangi yıl bitiyor? Sadece cevabı yaz.",
+  "haystack": {
+   "words": 6000,
+   "depth": 0.9,
+   "needle": "Sözleşmenin bitiş yılı 2031'dir."
+  },
+  "check": {
+   "type": "contains",
+   "answer": "2031"
+  }
+ },
+ {
+  "id": "lc10",
+  "prompt": "Yukarıdaki metni dikkatle oku. Soru: Gizli toplantı hangi gün yapılacak? Sadece cevabı yaz.",
+  "haystack": {
+   "words": 8000,
+   "depth": 0.35,
+   "needle": "Gizli toplantı Çarşamba günü saat 14:20'de yapılacak."
+  },
+  "check": {
+   "type": "contains",
+   "answer": "Çarşamba"
+  }
+ }
+]
