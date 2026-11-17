@@ -196,6 +196,15 @@ def test_view_switch_is_stored_on_the_server_or_locally():
     assert "MODULES.forEach(function (m) {" in js and "PANELS[" in js
 
 
+def test_klasik_default_tab_skips_navigating_modules():
+    js = _read("v2.js")
+    study = js.split('{ key: "study",', 1)[1].split('{ key: "core",', 1)[0]
+    assert "navigates: true" in study
+    first_tab = js.split("function firstTab() {", 1)[1].split("function applyView", 1)[0]
+    assert 'return x.key !== "oracle" && !x.navigates && (!x.need || allowed(x.need));' in first_tab
+    assert 'if (key === "study") { window.location.assign("/calis"); return; }' in js
+
+
 def test_klasik_layout_and_labels_that_fit():
     css = _read("v2.css")
     assert 'html[data-view="klasik"] .panel' in css and 'html[data-view="klasik"] .stage' in css

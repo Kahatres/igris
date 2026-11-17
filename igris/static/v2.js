@@ -403,7 +403,7 @@
 
   // ---------- modules on the wheel ----------
   var MODULES = [
-    { key: "study", name: "Çalışma", need: "admin",
+    { key: "study", name: "Çalışma", need: "admin", navigates: true,
       glyph: "M-32,-24 h28 v48 h-28 z M4,-24 h28 v48 h-28 z M0,-24 v48",
       info: function () { return "Sınav planı · sahne · çözüm kontrolü"; } },
     { key: "core", name: "Core", need: "admin",
@@ -1660,7 +1660,7 @@
     document.documentElement.style.setProperty("--top-h", document.querySelector(".top").offsetHeight + "px");
   }
   function firstTab() {
-    var m = MODULES.filter(function (x) { return x.key !== "oracle" && (!x.need || allowed(x.need)); })[0];
+    var m = MODULES.filter(function (x) { return x.key !== "oracle" && !x.navigates && (!x.need || allowed(x.need)); })[0];
     return m ? m.key : "waiting";
   }
   function applyView(v) {
